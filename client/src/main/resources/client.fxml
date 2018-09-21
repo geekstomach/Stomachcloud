@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="com.gb.cloud.client.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="CENTER">
+    <TextArea fx:id="textArea"  VBox.vgrow="ALWAYS" editable="false"/>
+    <HBox>
+        <TextField fx:id="textField" onAction="#btnClickMeReaction" HBox.hgrow="ALWAYS" promptText="Введите сообщение"/>
+        <Button text="Click Me!" onAction="#btnClickMeReaction"/>
+    </HBox>
+</VBox>

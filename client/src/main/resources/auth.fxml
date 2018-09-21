@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" stylesheets="@dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gb.cloud.login.LoginController">
+   <children>
+      <Label fx:id="loginTitle" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: black; -fx-text-fill: white;" text="LoginWindow" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="30.0" layoutY="138.0" prefHeight="25.0" prefWidth="243.0" promptText="Username" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="30.0" layoutY="194.0" prefHeight="25.0" prefWidth="243.0" promptText="Password" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="40.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="50.0" prefWidth="87.0" stylesheets="@dark-theme.css" text="Login" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button cancelButton="true" layoutX="166.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleCancelButtonAction" prefHeight="50.0" prefWidth="87.0" stylesheets="@dark-theme.css" text="Cancel" />
+   </children>
+</AnchorPane>

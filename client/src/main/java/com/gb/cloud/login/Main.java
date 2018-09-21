@@ -1,4 +1,4 @@
-package com.gb.cloud.client;
+package com.gb.cloud.login;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,9 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/client.fxml")); //загружаем интерфейс из файла
+        Parent root = FXMLLoader.load(getClass().getResource("/auth.fxml")); //загружаем интерфейс из файла
         primaryStage.setTitle("StomachCloud Client"); //создаем окно
-        primaryStage.setScene(new Scene(root, 400, 400)); // Задаем размер окна (Что означает root?)
+        primaryStage.setScene(new Scene(root)); //
         primaryStage.show(); //показать окно
     }
 
